@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #0f0f0f;
+  color: #f3f4f6;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.card {
+  @apply bg-neutral-900 border border-neutral-800 rounded-xl p-4;
+}
+
+.tabbar-safe {
+  height: calc(env(safe-area-inset-bottom) + 64px);
+}
